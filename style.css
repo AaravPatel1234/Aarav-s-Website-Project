@@ -1,3 +1,15 @@
 body  {
- background-color: red;
+ background-color: pink;
+	heading: 0;
+	margin: 0;
+}
+
+hi {
+	background-color: blue;
+	height 100px;
+}
+
+p { 
+	background-color: grey;
+	height 100px;
 }
