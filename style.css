@@ -1,8 +1,15 @@
+/*Setting font and basic margin and padding for website*/ 
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+
+/*Adding the background image, making it fit 
+and look alright and doing some basic styling
+to the base of the website like adding some 
+padding, and changing height and width*/ 
 
 .container{
     width: 100%;
@@ -15,16 +22,25 @@
     box-sizing: border-box;
 }
 
+/*Positioning the navbar and all the other
+contents on the page*/ 
+
 .navbar{
     height: 20%;
     display: flex;
     align-items: center;
 }
 
+/*Moving the navbar to the right side*/ 
+
 nav{
-    flex: 1;
+    flex: 100;
     text-align: right;
 }
+
+/*How the navbar is listed
+and how much spacing between
+the different buttons*/ 
 
 nav ul li{
     list-style: none;
@@ -32,10 +48,15 @@ nav ul li{
     margin-left: 75px;
 }
 
+/*Decorating text and color for navbar*/ 
+
 nav ul li a{
     text-decoration: solid;
     color: #fff
 }
+
+/*Base styling for the contents on the homepage
+like the title, description and info cards*/ 
 
 .row{
     display: flex;
@@ -43,14 +64,14 @@ nav ul li a{
     align-items: center;
 }
 
-.col{
-    flex-basis: 50%;
-}
+/*Changing color and size of home title*/ 
 
 h1{
     color: #fff;
     font-size: 100px;
 }
+
+/*Styling the additional text under the title*/ 
 
 p{
     color: #fff;
@@ -58,17 +79,8 @@ p{
     line-height: 15px;
 }
 
-button{
-    width: 180px;
-    color: #000;
-    font-size: 12px;
-    padding: 12px 0;
-    background: #fff;
-    border: 0;
-    border-radius: 20px;
-    outline: none;
-    margin-top: 30px;
-}
+
+/*Styling the card itself and how it looks*/ 
 
 .card{
     width: 220px;
@@ -85,6 +97,8 @@ button{
     transition: transform 0.5s;
 }
 
+/*Adding seperate background images for the different cards*/ 
+
 .card1{
     background-image: url(hislegacy.png.jpg);
 }
@@ -98,27 +112,93 @@ button{
     background-image: url(midnight.png.jpg);
 }
 
+/*Adding the bounce effect for the cards*/ 
+
 .card:hover{
     transform: translateY(-10px);
 }
+
+/*Styling the titles in the cards*/ 
 
 h5{
     color: #fff;
     text-shadow: 0 0 5px #999;
 }
 
+/*Styling the text in the cards*/ 
+
 .card p{
     text-shadow: 0 0 15px #000;
     font-size: 8px;
 }
+
+/*Making the logo an appropriate size*/ 
 
 .logo{
     width: 100px;
     cursor: pointer;
 }
 
+/*Making the menu icon an appropriate size and putting it in the right spot*/ 
+
 .menubar{
     width:50px;
     cursor: pointer;
     float: right;
 }
+
+/*Setting different background images
+for the different pages while keeping the
+same style for the page*/
+
+.morecontainer{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(display.jpg);
+    background-position: center;
+    background-size: contain;  
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+/* */
+
+.aboutuscontainer{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(aboutusbackground.jpg);
+    background-position: center;
+    background-size: contain;  
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+/* */
+
+.menscontainer{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(mensbackground.avif);
+    background-position: center;
+    background-size: contain;  
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+/* */
+
+.womenscontainer{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(womensbackground.jpg);
+    background-position: center;
+    background-size: contain;  
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+
