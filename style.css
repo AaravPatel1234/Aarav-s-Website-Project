@@ -51,7 +51,7 @@ nav ul li{
 /*Decorating text and color for navbar*/ 
 
 nav ul li a{
-    text-decoration: solid;
+    text-decoration: none;
     color: #fff
 }
 
@@ -111,6 +111,55 @@ p{
 .card4{
     background-image: url(midnight.png.jpg);
 }
+
+.card5{
+    background-image: url(mensblack.jpg);
+}
+
+.card6{
+    background-image: url(blackbox.jpg);
+}
+
+.card7{
+    background-image: url(range.jpg);
+}
+
+.card8{
+    background-image: url(herlegclose.jpg);
+}
+
+.card9{
+    background-image: url(carfresh.jpg);
+}
+
+.card10{
+    background-image: url(carfreshtwo.jpg);
+}
+
+.card11{
+    background-image: url(carfreshthree.jpg);
+}
+
+.card12{
+    background-image: url(carfreshfour.jpg);
+}
+
+.card13{
+    background-image: url(carfreshgreen.jpg);
+}
+
+.card14{
+    background-image: url(box.jpg);
+}
+
+.card15{
+    background-image: url(threeperfume.jpg);
+}
+
+.card16{
+    background-image: url(range.jpg);
+}
+
 
 /*Adding the bounce effect for the cards*/ 
 
