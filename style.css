@@ -1,4 +1,5 @@
-/*Setting font and basic margin and padding for website*/ 
+/*Setting font and basic margin and padding for website*/
+
 
 * {
     margin: 0;
@@ -6,10 +7,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/*Adding the background image, making it fit 
+
+/*Adding the background image, making it fit
 and look alright and doing some basic styling
-to the base of the website like adding some 
-padding, and changing height and width*/ 
+to the base of the website like adding some
+padding, and changing height and width*/
+
 
 .container{
     width: 100%;
@@ -22,8 +25,10 @@ padding, and changing height and width*/
     box-sizing: border-box;
 }
 
+
 /*Positioning the navbar and all the other
-contents on the page*/ 
+contents on the page*/
+
 
 .navbar{
     height: 20%;
@@ -31,32 +36,50 @@ contents on the page*/
     align-items: center;
 }
 
-/*Moving the navbar to the right side*/ 
-
-nav{
-    flex: 100;
-    text-align: right;
+/* Decorating text and color for navbar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-/*How the navbar is listed
-and how much spacing between
-the different buttons*/ 
-
-nav ul li{
-    list-style: none;
+nav ul li {
     display: inline-block;
     margin-left: 75px;
+    position: relative; /* Ensure positioning context for ::after */
 }
 
-/*Decorating text and color for navbar*/ 
-
-nav ul li a{
+nav ul li a {
     text-decoration: none;
-    color: #fff
+    color: #fff;
+    position: relative; /* Ensure stacking context */
+    transition: color 0.3s ease; /* Smooth text color transition */
 }
+
+/* Underline effect on hover */
+nav ul li a::after {
+    content: ''; /* Required for pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust as needed */
+    width: 100%; /* Full width */
+    height: 2px; /* Underline thickness */
+    background-color: #fff; /* Underline color */
+    transition: transform 0.3s ease, width 0.3s ease; /* Transition effect */
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: bottom right; /* Animation origin */
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1); /* Expand on hover */
+    transform-origin: bottom left; /* Adjust origin for smooth animation */
+    width: 100%; /* Ensure full width on hover */
+}
+
 
 /*Base styling for the contents on the homepage
-like the title, description and info cards*/ 
+like the title, description and info cards*/
+
 
 .row{
     display: flex;
@@ -64,14 +87,18 @@ like the title, description and info cards*/
     align-items: center;
 }
 
-/*Changing color and size of home title*/ 
+
+/*Changing color and size of home title*/
+
 
 h1{
     color: #fff;
     font-size: 100px;
 }
 
-/*Styling the additional text under the title*/ 
+
+/*Styling the additional text under the title*/
+
 
 p{
     color: #fff;
@@ -80,7 +107,10 @@ p{
 }
 
 
-/*Styling the card itself and how it looks*/ 
+
+
+/*Styling the card itself and how it looks*/
+
 
 .card{
     width: 220px;
@@ -97,7 +127,9 @@ p{
     transition: transform 0.5s;
 }
 
-/*Adding seperate background images for the different cards*/ 
+
+/*Adding seperate background images for the different cards*/
+
 
 .card1{
     background-image: url(hislegacy.png.jpg);
@@ -112,83 +144,106 @@ p{
     background-image: url(midnight.png.jpg);
 }
 
+
 .card5{
     background-image: url(mensblack.jpg);
 }
+
 
 .card6{
     background-image: url(blackbox.jpg);
 }
 
+
 .card7{
     background-image: url(range.jpg);
 }
+
 
 .card8{
     background-image: url(herlegclose.jpg);
 }
 
+
 .card9{
     background-image: url(carfresh.jpg);
 }
+
 
 .card10{
     background-image: url(carfreshtwo.jpg);
 }
 
+
 .card11{
     background-image: url(carfreshthree.jpg);
 }
+
 
 .card12{
     background-image: url(carfreshfour.jpg);
 }
 
+
 .card13{
     background-image: url(carfreshgreen.jpg);
 }
+
 
 .card14{
     background-image: url(box.jpg);
 }
 
+
 .card15{
     background-image: url(threeperfume.jpg);
 }
+
 
 .card16{
     background-image: url(range.jpg);
 }
 
 
-/*Adding the bounce effect for the cards*/ 
+
+
+/*Adding the bounce effect for the cards*/
+
 
 .card:hover{
     transform: translateY(-10px);
 }
 
-/*Styling the titles in the cards*/ 
+
+/*Styling the titles in the cards*/
+
 
 h5{
     color: #fff;
     text-shadow: 0 0 5px #999;
 }
 
-/*Styling the text in the cards*/ 
+
+/*Styling the text in the cards*/
+
 
 .card p{
     text-shadow: 0 0 15px #000;
     font-size: 8px;
 }
 
-/*Making the logo an appropriate size*/ 
+
+/*Making the logo an appropriate size*/
+
 
 .logo{
     width: 100px;
     cursor: pointer;
 }
 
-/*Making the menu icon an appropriate size and putting it in the right spot*/ 
+
+/*Making the menu icon an appropriate size and putting it in the right spot*/
+
 
 .menubar{
     width:50px;
@@ -196,9 +251,11 @@ h5{
     float: right;
 }
 
+
 /*Setting different background images
 for the different pages while keeping the
 same style for the page*/
+
 
 .morecontainer{
     width: 100%;
@@ -211,7 +268,9 @@ same style for the page*/
     box-sizing: border-box;
 }
 
+
 /* */
+
 
 .aboutuscontainer{
     width: 100%;
@@ -224,7 +283,9 @@ same style for the page*/
     box-sizing: border-box;
 }
 
+
 /* */
+
 
 .menscontainer{
     width: 100%;
@@ -237,7 +298,9 @@ same style for the page*/
     box-sizing: border-box;
 }
 
+
 /* */
+
 
 .womenscontainer{
     width: 100%;
@@ -249,5 +312,9 @@ same style for the page*/
     padding-right: 8%;
     box-sizing: border-box;
 }
+
+
+
+
 
 
